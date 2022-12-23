@@ -45,22 +45,3 @@ const onFormSubmit = (event) => {
 	}
 };
 loginForm.addEventListener("submit", onFormSubmit);
-
-// for (let i = 0; i < formElementsArr.length - 1; i += 1) {
-// 	while (formElementsArr[i].value === "") {
-// 		alert("Всі поля повинні бути заповнені");
-// 	}
-// }
-// const loginFormData = new FormData(event.currentTarget);
-
-// const userName = data.get("user-name");
-
-// console.log(loginFormData);
-
-// while (formElementsArr[i].value !== "") {
-// 	alert("Всі поля повинні бути заповнені");
-// }
-
-// loginFormData.forEach((value, name) => {
-// 	console.log(`name: ${name}, value:${value}`);
-// });

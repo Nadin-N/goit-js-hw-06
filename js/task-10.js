@@ -38,22 +38,14 @@ const onGetAmount = (event) => {
 };
 
 const createBoxes = (amount) => {
-	// let arr = [];
-	// let string = "";
 	for (let i = 0; i < amount; i += 1) {
 		let boxElem = document.createElement("div");
 		boxElem.style.width = 30 + i * 10 + "px";
 		boxElem.style.height = 30 + i * 10 + "px";
 		boxElem.style.backgroundColor = getRandomHexColor();
-		// arr.push(boxElem);
-		// console.log(arr);
-		// let partial = arr.join("");
-		// console.log(partial);
-		// string += boxElem;
 
 		refs.boxesCollection.insertAdjacentElement("beforeend", boxElem);
 	}
-	// refs.boxesCollection.innerHTML = string;
 };
 
 const destroyBoxes = (event) => (refs.boxesCollection.innerHTML = "");

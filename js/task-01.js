@@ -17,7 +17,7 @@
 // Elements: 5
 
 const categoriesListEl = document.querySelectorAll("#categories .item");
-// console.log(`Number of categories: ${categoriesListEl.length}`);
+console.log(`Number of categories: ${categoriesListEl.length}`);
 
 const findAllLiItems = (arr) => {
 	console.log(`Number of categories: ${categoriesListEl.length}`);

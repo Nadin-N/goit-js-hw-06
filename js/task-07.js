@@ -3,6 +3,7 @@
 // <input id="font-size-control" type="range" min="16" max="96" />
 // <br />
 // <span id="text">Abracadabra!</span>
+
 const refs = {
 	inputRangeEl: document.querySelector("#font-size-control"),
 	textEl: document.querySelector("#text"),

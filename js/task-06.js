@@ -30,8 +30,14 @@ const refs = {
 
 const checkInputSymbols = (event) => {
 	if (refs.inputEl.value.length <= refs.maxSymbolValue) {
+		if (refs.inputEl.classList.contains("invalid")) {
+			refs.inputEl.classList.remove("invalid");
+		}
 		refs.inputEl.classList.add("valid");
 	} else {
+		if (refs.inputEl.classList.contains("valid")) {
+			refs.inputEl.classList.remove("valid");
+		}
 		refs.inputEl.classList.add("invalid");
 	}
 };
